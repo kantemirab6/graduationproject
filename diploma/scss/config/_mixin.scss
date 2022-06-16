@@ -1,0 +1,19 @@
+@mixin montserrat {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+}
+@mixin mulish($weight) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: $weight;
+}
+
+@mixin bgr {
+    background: linear-gradient(44.11deg, #CD10FF 15.75%, #CD10FF 15.76%, #9F06FF 84.63%);
+}
+@mixin bgr2 {
+    background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+    mix-blend-mode: normal;
+    opacity: 0.05;
+}

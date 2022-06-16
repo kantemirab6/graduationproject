@@ -1,0 +1,81 @@
+.stats{
+    @include mulish(400);
+    position: relative;
+}
+
+.statist{
+    background: $color-white;
+    position: relative;
+    z-index: 10;
+    margin-top: 100px;
+    align-items: center;
+    color: $color-font01;
+    display: flex;
+    justify-content: center;
+    max-width: 1120px;
+    height: 100px;
+    border: 1px solid #E7EAEB;
+    border-radius: 21px;
+    @media screen and (min-width: 800px) {
+        margin-top: 150px;
+    }
+    @media screen and (min-width: 720px) {
+        height: 172px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+    }
+    &__title{
+        font-size: 20px;
+        @media screen and (min-width: 720px) {
+            font-size: 40px;
+        }
+    }
+    &__desc{
+        font-size: 10px;
+        color: $color-font02;
+        @media screen and (min-width: 550px) {
+            font-size: 16px;
+        }
+    }
+    &__hr{
+        height: 112px;
+        width: 1px;
+        background: #E7EAEB;
+        border: none;
+        display: inline;
+    }
+}
+
+.stats::before{
+    content: '';
+    position: absolute;
+    top: 180px;
+    width: 288px;
+    height: 288px;
+    border-radius: 50%;
+    @include bgr;
+    left: 0;
+    display: none;
+    @media screen and(min-width: 720px) {
+        display: unset;
+    }
+}
+.stats::after{
+    content: '';
+    position: absolute;
+    top: 390px;
+    left: 200px;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    background: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+    display: none;
+    @media screen and(min-width: 720px) {
+        display: unset;
+    }
+}

@@ -1,0 +1,70 @@
+.prefooter{
+    position: relative;
+    overflow: hidden;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__slogan{
+        margin: 0 auto;
+        text-align: center;
+        font-size: 0.75rem;
+        letter-spacing: 2.57143px;
+        text-transform: uppercase;
+        color: #A20AE6;
+        padding: 9px 35px;
+        border-radius: 33px;
+        background: #FFF0E4;
+        max-width: 400px;
+    }
+    &__title{
+        z-index: 10;
+        margin: 30px auto 20px;
+        font-size: 1.875rem;
+        text-align: center;
+        @media screen and(min-width: 500px) {
+            margin: 50px auto 30px;
+            font-size: 2.875rem;
+            max-width: 650px;
+        }
+    }
+    &__button{
+        margin: 0 auto 60px;
+        width: 206px;
+        height: 66px;
+        @include mulish(700);
+        font-size: 20px;
+        @media screen and(min-width: 500px) {
+            margin-bottom: 120px;
+        }
+    }
+}
+.prefooter::before{
+    content: '';
+    position: absolute;
+    top: 1px;
+    width: 288px;
+    height: 288px;
+    border-radius: 50%;
+    @include bgr;
+    right: -150px;
+    display: none;
+    @media screen and(min-width: 720px) {
+        display: unset;
+    }
+}
+.prefooter::after{
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 40px;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    background: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+    display: none;
+    @media screen and(min-width: 720px) {
+        display: unset;
+    }
+}

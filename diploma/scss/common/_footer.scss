@@ -1,0 +1,108 @@
+li{
+    list-style: none;
+}
+.footer{
+    background-color: #FAF3FF;
+    padding: 30px 0 0px;
+    @media screen and (min-width: 500px) {
+        padding: 63px 0 60px;
+        
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__logo{
+        display: none;
+        width: 150px;
+        height: 30px;
+        @media screen and (min-width: 500px) {
+            display: unset;
+        }
+    }
+    &__form{
+        width: 890px;
+        height: 66px;
+        border-radius: 33px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input{
+        padding: 25px 0 25px 25px;
+        margin: 0;
+        width: 100%;
+        -webkit-appearance: none;
+        border: none;
+        background-color: white;
+        border-radius: 33px;
+        @include mulish(400);
+        @media screen and (min-width: 500px) {
+            padding: 25px 0 25px 40px;
+        }
+    }   
+    &__button{
+        border: none;
+        margin: 0;
+        margin: 10px 10px 0 0;
+        background-color: white;
+        border-radius: 33px;
+        width: 90px;
+        text-align: center;
+        height: 50px;
+        cursor: pointer;
+        @include mulish(700);
+        font-size: 12px;
+        @media screen and (min-width: 500px) {
+            width: 135px;
+            font-size: 16px;
+        }
+    }
+
+
+    &__nav{
+        padding: 0 10px;
+        max-width: 636px;
+        margin: 50px auto 0;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+        @media screen and (min-width: 500px) {
+        }
+    }
+    li{
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+    &__help-menu{
+        max-width: 349px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+    }
+    ul{
+        max-width: 110px;
+        padding: 0;
+        @media screen and (min-width: 450px) {
+            max-width: 190px;
+        }
+    }
+    &__help2{
+        display: inline-block;
+    }
+    &__li-main{
+        @include mulish(700);
+        color: $color-font01;
+    }
+    &__li-invis{
+        opacity: 0;
+    }
+    &__li{
+        @include mulish(400);
+        color: $color-font02;
+    }
+}

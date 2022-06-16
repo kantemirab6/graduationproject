@@ -1,0 +1,47 @@
+.about{
+
+    p{
+        @include mulish(400);
+    }
+    margin: 60px;
+    @media screen and (min-width: 720px) {
+        margin: 120px;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 740px) {
+            flex-direction: row-reverse;
+        }
+    }
+    &__info{
+        max-width: 520px;
+        text-align: center;
+        @media screen and (min-width: 500px) {
+            text-align: unset;;
+        }
+    }
+    &__title{
+        font-size: 25px;
+        @media screen and (min-width: 500px) {
+            font-size: 2.875rem;
+        }
+    }
+    &__desc{
+        font-size: 0.9375rem;
+        line-height: 1.875rem;
+        @media screen and (min-width: 500px) {
+            font-size: 1.25rem;
+        }
+    }
+    &__instructor{
+        width: 200px;
+        height: 180px;
+        @media screen and (min-width: 970px) {
+            width: 419px;
+            height: 382px;
+        }
+    }
+}

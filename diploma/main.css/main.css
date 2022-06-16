@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/mulish-v11-latin-regular.woff") format("woff");
+}
+/* mulish-700 - latin */
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/mulish-v11-latin-700.woff") format("woff");
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v24-latin-700.woff") format("woff");
+}
+body {
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@media screen and (min-width: 680px) {
+  .container {
+    padding: 15px;
+  }
+}
+.header {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  color: #001A49;
+}
+
+.nav {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 780px) {
+  .nav__logo {
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 680px) {
+  .nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
+.nav .logo .logo-invisivle {
+  display: none;
+}
+
+@media screen and (min-width: 680px) {
+  .nav .logo .logo-invisivle {
+    display: unset;
+  }
+}
+.nav__menu {
+  display: flex;
+  gap: 9px;
+}
+
+@media screen and (min-width: 680px) {
+  .nav__menu {
+    gap: 50px;
+  }
+}
+.nav__menu-link {
+  font-weight: 700;
+  color: #001A49;
+  display: flex;
+  font-size: 11px;
+}
+
+@media screen and (min-width: 500px) {
+  .nav__menu-link {
+    font-size: 16px;
+  }
+}
+.nav__auth {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  margin: 0 0 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+  .nav__auth {
+    font-size: 16px;
+  }
+}
+.nav__auth-sign-in {
+  font-weight: 700;
+  color: #001A49;
+  display: none;
+}
+
+@media screen and (min-width: 390px) {
+  .nav__auth-sign-in {
+    display: unset;
+  }
+}
+@media screen and (min-width: 800px) {
+  .nav__auth-sign-in {
+    margin-right: 50px;
+  }
+}
+.nav__auth-btn {
+  width: 70px;
+  height: 30px;
+}
+
+@media screen and (min-width: 500px) {
+  .nav__auth-btn {
+    width: 100px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 830px) {
+  .nav__auth-btn {
+    width: 147px;
+    height: 50px;
+  }
+}
+.btn {
+  color: #FFFFFF;
+  border-radius: 33px;
+  border: none;
+  background: linear-gradient(44.11deg, #CD10FF 15.75%, #CD10FF 15.76%, #9F06FF 84.63%);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-size: 1090px 700px;
+  background-repeat: no-repeat;
+}
+
+.info__bgr {
+  background: #FAF3FF;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: 1;
+}
+
+@media screen and (min-width: 600px) {
+  .info__bgr {
+    height: 700px;
+  }
+}
+@media screen and (min-width: 1090px) {
+  .info__bgr {
+    border-radius: 0px 20px 20px 0px;
+    width: 1090px;
+  }
+}
+.info__video {
+  display: none;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 1.25rem 1.25rem;
+  box-shadow: 0px 32px 44px #818A8C;
+}
+
+@media screen and (min-width: 600px) {
+  .info__video {
+    display: unset;
+  }
+}
+@media screen and (max-width: 1028px) {
+  .info__video {
+    width: 300px;
+    height: 200px;
+  }
+}
+.info__title {
+  margin: 0;
+  padding-top: 2.5rem;
+  font-size: 2.8125rem;
+  max-width: 460px;
+  letter-spacing: -0.0625rem;
+}
+
+@media screen and (min-width: 827px) {
+  .info__title {
+    padding-top: 6.125rem;
+    font-size: 4.25rem;
+  }
+}
+.info__desc {
+  max-width: 516px;
+  font-size: 14px;
+  line-height: 1.25rem;
+  color: #4F596A;
+}
+
+@media screen and (min-width: 720px) {
+  .info__desc {
+    line-height: 1.875rem;
+    font-size: 20px;
+  }
+}
+.info__button {
+  width: 150px;
+  height: 50px;
+}
+
+@media screen and (min-width: 680px) {
+  .info__button {
+    width: 206px;
+    height: 66px;
+  }
+}
+.info__users {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .info__users {
+    margin-top: 100px;
+  }
+}
+.info__users-amount {
+  color: #4F596A;
+}
+
+.info__users-amount--colored {
+  color: #9F07FF;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.css.map */

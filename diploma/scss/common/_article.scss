@@ -1,0 +1,119 @@
+.article {
+    position: relative;
+    overflow: hidden;
+    margin-top: 70px;
+    @media screen and (min-width: 720px) {
+        margin-top: 150px;
+    }
+    p{
+        @include mulish(400);
+        color: $color-font02;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: -35px;
+        right: -300px;
+        width: 383px;
+        height: 383px;
+        border-radius: 50%;
+        background: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+    }
+    &__info{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 560px;
+        position: relative;
+        z-index: 10;
+    }
+    &__title{
+        font-size: 1.875rem;
+        @media screen and (min-width: 500px) {
+            font-size: 46px;
+        }
+    }
+    &__desc{
+        margin: 20px;
+        font-size: 0.9375rem;
+        color: $color-font02;
+        @include mulish(400);
+        @media screen and (min-width: 500px) {
+            font-size: 20px;
+            line-height: 1.875rem;
+            }
+    }
+}
+.article__posts{
+
+    .article__item{
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 10;
+        max-height: 272px;
+        background: #FAF3FF;
+        border-radius: 21px;
+        display: flex;
+        align-items: center;
+    }
+    .article__item-content{
+        width: 1120px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        @media screen and(min-width: 1020px) {
+            padding: 50px;
+        }
+    }
+    .article__post-info{
+        max-width: 450px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .article__post-logo{
+        display: none;
+        @media screen and(min-width: 500px) {
+            display: unset;
+        }
+    }
+    .article__post-desc{
+        font-size: 16px;
+        line-height: 18px;
+        @media screen and (min-width: 660px) {
+            line-height: 24px;
+        }
+    }
+    .article__post-button{
+        margin: 0 0 0 auto;
+        max-width: 278px;
+        @include mulish(400);
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+        line-height: 15px;
+        @media screen and (min-width: 720px) {
+            font-size: 16px;
+            height: 66px;
+            padding: 30px;
+            border-radius: 33px;
+        }
+    }
+    .article__hr{
+        width: 1px;
+        height: 30px;
+        background: #8639B5;
+        border: 0;
+        display: none;
+        margin: 0 30px;
+        @media screen and (min-width: 720px) {
+            display: inline-block;
+        }
+    }
+    .article-invis{
+        display: none;
+        @media screen and (min-width: 720px) {
+            display: unset;
+        }
+    }
+}
